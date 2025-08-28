@@ -25,6 +25,7 @@ pacman_packages=(
     slurp
     starship
     sway
+    swaybg
     swayidle
     swaylock
     swaync
