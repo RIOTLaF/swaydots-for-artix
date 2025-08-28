@@ -11,6 +11,8 @@
 
 ## 📦 Installing
 
+### Arch Linux
+
 Read this first:
 
 >  [!IMPORTANT]
@@ -27,11 +29,15 @@ Read this first:
 
 You need `curl`
 
-To install swaydots, paste this into your terminal:
+To install swaydots on Arch Linux, paste this into your terminal:
 
 ```bash
 sh <(curl -L https://raw.githubusercontent.com/aceydot/swaydots/refs/heads/main/install.sh)
 ```
+
+### Other
+
+Install script is only available for Arch-based systems at the moment. Sorry :-(
 
 ## 🖼️ Previews
 
