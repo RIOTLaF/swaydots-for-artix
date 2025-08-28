@@ -22,7 +22,7 @@ if [ -f "$theme_dir/waybar/config" ]; then
 fi
 
 # Rofi
-if [ -f "$theme_dir/rofi/config.rasi" ]; then
+if [ -f "$theme_dir/rofi/$theme.rasi" ]; then
     sed -i "s|^@theme \".*\"|@theme \"$theme_dir/rofi/$theme.rasi\"|" "$CONFIG_DIR/rofi/config.rasi"
 fi
 
@@ -32,7 +32,7 @@ if [ -f "$theme_dir/swaylock/config" ]; then
 fi
 
 # Sway
-if [ -f "$theme_dir/sway/config" ]; then
+if [ -f "$theme_dir/sway/config-$theme" ]; then
     sed -i "s|^include .*/sway/themes/.*/sway/config-.*|include $theme_dir/sway/config-$theme|" "$SWAY_DIR/config"
 fi
 
@@ -47,8 +47,8 @@ if [ -f "$theme_dir/starship/starship.toml" ]; then
 fi
 
 # Alacritty
-if [ -f "$theme_dir/alacritty/alacritty.toml" ]; then
-    theme_import="$theme_dir/alacritty/$theme.toml"
+theme_import="$theme_dir/alacritty/$theme.toml"
+if [ -f "$theme_dir/alacritty/$theme.toml" ]; then
     sed -i "s|^general\.import = .*|general.import = [\"$theme_import\"]|" "$CONFIG_DIR/alacritty/alacritty.toml"
 fi
 
