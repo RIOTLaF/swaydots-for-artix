@@ -36,6 +36,7 @@ other=(
     slurp
     starship
     sway
+    swaybg
     swayidle
     swaylock
     swaync
