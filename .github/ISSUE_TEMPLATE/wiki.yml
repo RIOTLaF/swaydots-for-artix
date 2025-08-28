@@ -1,7 +1,7 @@
 name: Wiki
 description: Suggest a update to the swaydots wiki.
 title: "[Wiki] "
-labels: ["documentation"]
+labels: ["wiki"]
 assignees:
   - aceydot
 
