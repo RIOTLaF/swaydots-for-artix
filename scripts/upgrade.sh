@@ -112,15 +112,23 @@ if ! git diff-index --quiet HEAD --; then
     log_message "${SUCCESS} Changes saved to git stash"
 fi
 
+# Get the newest packages
+log_message "${YELLOW}Installing the newest packages...${RESET}"
+if ! ~/.config/sway/install-scripts/packages.sh; then
+    handle_error "Package installation failed!"
+fi
+log_message "${SUCCESS} Packages installed successfully!"
+
 # Pull the latest changes
 log_message "${YELLOW}Pulling latest changes...${RESET}"
 if git pull; then
     log_message "${SUCCESS} Successfully updated dotfiles!"
     log_message "${NOTICE} If you had changes, they are saved in git stash"
-    log_message "${GREEN}✨ Upgrade complete!${RESET}"
 else
     handle_error "Failed to pull latest changes. Please resolve conflicts manually."
 fi
+
+log_message "${GREEN}✨ Upgrade complete!${RESET}"
 
 cat << EOF
 ${YELLOW}

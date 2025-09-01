@@ -35,8 +35,7 @@ bar {
 }
 
 # Startup programs
-exec_always swaync
-exec_always wl-paste --type text --watch ~/.config/sway/scripts/rofi/rofi-clipboard.sh add
+exec_always swaync 
 
 # Floating Rules
 for_window [app_id="Alacritty" title="^pulsemixer$"] floating enable
@@ -47,8 +46,8 @@ bindsym $mod+t exec $term
 bindsym $mod+f exec $filemanager
 bindsym $mod+r exec $menu
 bindsym $mod+c exec rofimoji
-bindsym $mod+n exec ~/.config/sway/scripts/rofi/rofi-clipboard.sh menu
 bindsym $mod+Shift+n exec swaync-client -t -sw
+bindsym $mod+n exec clipton
 
 # Change theme
 bindsym $mod+g exec ~/.config/sway/scripts/rofi/theme-picker.sh

@@ -29,6 +29,7 @@ fonts=(
 
 other=(
     alacritty
+    clipton
     fastfetch
     grim
     imagemagick
