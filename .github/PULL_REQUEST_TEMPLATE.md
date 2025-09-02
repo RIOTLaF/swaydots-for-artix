@@ -30,7 +30,6 @@ Put an `x` where needed.
 - [ ] I have updated the documentation (if needed).
 - [ ] I have checked that things run without errors.
 - [ ] The change requires a change in the wiki.
-- [ ] I want to add something to the wiki.
 
 ---
 
