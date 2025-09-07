@@ -34,6 +34,7 @@ pacman_packages=(
     waybar
     wl-clipboard
     zsh
+    libnotify
 )
 
 log_message "${YELLOW}Installing pacman packages...${RESET}"
@@ -51,7 +52,7 @@ aur_packages=(
 
 log_message "${YELLOW}Installing AUR packages...${RESET}"
 
-if ! yay -S --noconfirm "${aur_packages[@]}"; then
+if ! yay -S --noconfirm --needed "${aur_packages[@]}"; then
     handle_error "Failed to install AUR packages!"
 fi
 
