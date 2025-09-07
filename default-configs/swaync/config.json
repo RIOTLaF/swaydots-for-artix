@@ -66,11 +66,11 @@
         },
         {
           "label": "",
-          "command": "systemctl reboot"
+          "command": "reboot"
         },
         {
           "label": "",
-          "command": "systemctl poweroff"
+          "command": "poweroff"
         }
       ]
     }

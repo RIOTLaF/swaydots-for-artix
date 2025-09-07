@@ -65,7 +65,7 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioStop exec playerctl stop
-bindsym xf86Sleep exec systemctl suspend
+bindsym xf86Sleep exec pm-suspend
 
 # Screenshot
 bindsym $mod+Print exec grim

@@ -32,7 +32,7 @@ You need `curl`
 To install swaydots on Arch Linux, paste this into your terminal:
 
 ```bash
-sh <(curl -L https://raw.githubusercontent.com/aceydot/swaydots/refs/heads/main/install.sh)
+sh <(curl -L https://raw.githubusercontent.com/RIOTLaF/swaydots-for-artix/refs/heads/main/install.sh)
 ```
 
 ### Other

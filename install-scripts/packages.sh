@@ -46,6 +46,7 @@ aur_packages=(
     clipton-git
     ttf-babelstone-runic
     wttrbar
+    pm-utils
 )
 
 log_message "${YELLOW}Installing AUR packages...${RESET}"
@@ -54,11 +55,11 @@ if ! yay -S --noconfirm "${aur_packages[@]}"; then
     handle_error "Failed to install AUR packages!"
 fi
 
-log_message "${YELLOW}Enabling clipton service...${RESET}"
+log_message "${YELLOW}Please remember to enable clipton manually${RESET}"
 
-if ! systemctl --user enable --now clipton; then
-    handle_error "Failed to enable clipton service!"
-fi
+#if ! systemctl --user enable --now clipton; then
+#    handle_error "Failed to enable clipton service!"
+#fi
 
 log_message "${SUCCESS} All packages installed successfully!${RESET}"
 
