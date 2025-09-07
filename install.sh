@@ -44,7 +44,7 @@ if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
 fi
 
 # Create log directory
-LOG_DIR="$HOME/swaydots-log-$(date +%Y%m%d_%H%M%S)"
+LOG_DIR="$HOME/swaydots-log-forartix-$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 export LOG_DIR
 
