@@ -67,7 +67,7 @@ handle_error() {
 
 export -f log_message handle_error
 
-DOTFILES_REPO="https://github.com/aceydot/swaydots.git"
+DOTFILES_REPO="https://github.com/RIOTLaF/swaydots-for-artix.git"
 CLONE_DIR="$HOME/.config/sway"
 INSTALL_SCRIPTS_DIR="$HOME/.config/sway/install-scripts"
 SCRIPTS_DIR="$HOME/.config/sway/scripts"
