@@ -1,3 +1,6 @@
+# README FIRST
+not maintained can have unexpected problems that will NOT be solved
+
 <img align="center" src="assets/banner.png" />
 
 # ✨swaydots✨
